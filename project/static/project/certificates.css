@@ -1,0 +1,61 @@
+.section1{
+    margin: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+.section1-img{
+    margin: 15px;
+    height: 500px;
+    width: 600px;
+}
+
+.img1{
+    margin-right: 120px;
+}
+.section2{
+    margin: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+.section2-img{
+    margin: 15px;
+    height: 500px;
+    width: 600px;
+}
+
+.img3{
+    margin-right: 120px;
+}
+
+.img1{
+    border-radius: 10px;
+    box-shadow: 1px 10px #888888;
+}
+.img2{
+    border-radius: 10px;
+    box-shadow: 15px 10px #888888;
+}
+.img3{
+    border-radius: 10px;
+    box-shadow: 15px 10px #888888;
+}
+.img4{
+    border-radius: 10px;
+    box-shadow: 15px 10px #888888;
+}
+
+.img1:hover{
+    transform: scale(1.2);
+}
+.img2:hover{
+    transform: scale(1.2);
+}
+.img3:hover{
+    transform: scale(1.2);
+}
+.img4:hover{
+    transform: scale(1.2);
+}
+

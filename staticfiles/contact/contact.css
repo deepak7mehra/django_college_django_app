@@ -1,0 +1,34 @@
+body{
+   /*  background-color: #ebeeee; */
+   background-color: red;
+}
+.form{
+    display: flex;
+    justify-content: space-around;
+}
+.inside1{
+    padding: 23px;
+    display: flex;
+    justify-content: space-around;
+}
+.inside2{
+    padding: 23px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.btn{
+    text-align: center;
+}
+#btn{
+    width: 100px;
+    height: 40px;
+}
+#btn{
+    border-radius: 5px;
+    transition-duration: 1s;
+    cursor: pointer;
+}
+#btn:hover{
+    background-color: grey;
+}

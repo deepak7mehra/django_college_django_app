@@ -1,0 +1,146 @@
+{% extends 'base.html' %}
+{% load static %}
+{% comment %} <!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="{% static 'index.css' %}">
+  <title>Home</title>
+</head>
+
+<body>
+  <section>
+
+    <div class="nav">
+      <div class="nav1" style="padding: 28px;">
+        <a href="{% url 'index' %}"><img src="{% static 'home/images/icon.png' %}" alt="this is an image"></a>
+
+      </div>
+
+      <div class="nav2">
+        <p><a href="resume.html">
+            <p>Resume | </p>
+          </a> <a href="#">
+            <p> Project | </p>
+          </a> <a href='{% url 'contact' %}'>
+            <p>Contact</p>
+          </a></p>
+      </div>
+    </div>
+
+    <div class="middle">
+      <div class="content">
+        <div><img src="{% static 'home/images/user.png' %}" alt="this is an image"></div>
+        <div class="text">
+          <h1 style="font-size: 100px; margin: 1px;">hello</h1>
+          <p style="font-size: 20px;"><b> I am Deepak </b> </p> 
+          <p> I'm student of Dronacharya College of engineering. Current studying computer science engineering. I am passionate about learning new things. </p>
+
+          <div class="button">
+            <a href="https://pdfhost.io/v/eK9BWDnhQ_deepak_resume" target="_blank"><div id="resume"><b> <br> <br>  Resume</b></div></a>
+            <a href="#"><div id="project"><b> <br> <br> project</b></div></a>
+            <a href="contact.html"><div id="contact"><b> <br> <br> Contact</b></div></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <hr>
+
+
+    <div class="end" >
+
+      <div>
+        <p>Phone</p>
+        8287913301
+      </div>
+
+      <div>
+        <p>Email</p>
+         <p>deepak7mehra7@gmail.com</p>
+      </div>
+
+      <div>
+        <p>Follow Me</p>
+        <a href="https://twitter.com/deepakM61952927?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false">FollowDeepak</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+      </div>
+
+    </div>
+
+  </section>
+
+</body>
+
+</html> {% endcomment %}
+
+{% block css %}
+<link rel="stylesheet" href="{% static 'index.css' %}">
+<link rel="stylesheet" href="{% static 'home/img.css' %}">
+{% endblock  %}
+
+{% block title %}home{% endblock  %}
+
+{% block content %}
+<div class="middle">
+  <div class="content">
+    <div style="background = white;"><img style="height:300px; width=300px" src="{% static 'home/images/my_image.jpg' %}" alt="this is an image"></div>
+    <div class="text">
+      <h1 style="font-size: 100px; margin: 1px;">hello</h1>
+      <p style="font-size: 20px;"><b> I am Deepak </b> </p> 
+      <p> I'm student of Dronacharya College of engineering. Current pursing engineering and my major is computer science. I was born in Uttrakhand and grew up in New Delhi. I completed my schooling from <a href="https://www.masonicpublicschool.com/" target="_blank">Masonic Public School</a>, New Delhi. I love to play football and ride skateboard. I spent most of my free time by hanging out with my skateboard. My future goal is to become a successful softawre engineer.</p>
+
+      <p>
+        <h3>My skills:</h3>
+        <ul>
+          <li>Knowledge of variety of programming languages include Python, C , C++  and Javascript</li>
+          <li>Knowledge of designing a user frendly website using django as backend frame work &nbsp &nbsp &nbsp</li>
+          <li>Good communtication skills , Creative, Passionate about tech and flexible &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp&nbsp&nbsp&nbsp&nbsp &nbsp &nbsp&nbsp</li>
+        </ul>
+      </p>
+
+      <div class="button">
+        <a href="https://pdfhost.io/v/eK9BWDnhQ_deepak_resume" target="_blank"><div id="resume"><b> <br> <br>  Resume</b></div></a>
+        <a href="{% url 'certificates' %}"><div id="contact"><b> <br> <br> certificates</b></div></a>
+        <a href="{% url 'project' %}"><div id="project"><b> <br> <br> project</b></div></a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<hr>
+
+
+<div class="end" >
+
+  <div>
+    <p>Phone</p>
+    8287913301
+  </div>
+
+  <div>
+    <p>Email</p>
+     <p>deepak7mehra7@gmail.com</p>
+  </div>
+
+  <div>
+    <p>Follow Me</p>
+    <a href="https://twitter.com/deepakM61952927?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false">FollowDeepak</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+  </div>
+
+</div>
+{% endblock  %}

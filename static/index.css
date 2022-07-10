@@ -1,0 +1,134 @@
+body, html {
+    /* color: #20303c; */
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: Madefor,Helvetica Neue,Helvetica,Arial,メイリオ,meiryo,ヒラギノ角ゴ pro w3,hiragino kaku gothic pro,sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    /* background-color: #ebeeee; */
+    background-color: red;
+}
+
+.image{
+    border-radius: 40px;
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+
+.nav2{
+    width: 300px;
+    
+    padding-right: 5px;
+    display: flex;
+    margin-right: 41px;
+}
+.nav2 a{
+    color: rgb(27, 26, 26);
+    text-decoration: none;
+    padding-left: 22px;
+    animation-duration: 10s;
+}
+
+.nav2 a:hover{
+    color: brown;
+}
+
+/* middle */
+
+.middle{
+    /* background-color: red; */
+    text-align: center;
+}
+.content {
+    display: flex;
+    align-items: center;
+    padding: 13px;
+    padding-left: 190px;
+}
+.text{
+    margin-left: 20px;
+    width: 52%;
+    /* background-color: red; */
+    text-align: center;
+}
+.button{
+    display: flex;
+    justify-content: space-between;
+}
+
+#project{
+    border-radius: 200px;
+    text-align: center;
+    background-color: #eea302;
+    width: 140px;
+    height: 140px;
+    
+}
+#resume{
+    
+    border-radius: 200px;
+    text-align: center;
+    background-color: #ff3b25;
+    width: 140px;
+    height: 140px;
+    animation-duration: 5s;
+    border-color: black;
+    z-index: -1;
+}
+#contact{
+    border-radius: 200px;
+    text-align: center;
+    background-color: #80dad8;
+    z-index: -1;
+    width: 140px;
+    height: 140px;
+    
+}
+
+.button a{
+    color: black;
+    text-decoration: none;
+}
+#resume:hover{
+    animation-duration: 5s;
+    background-color: white;
+    border-style: solid;
+    border-color: black;
+}
+#project:hover{
+    animation-duration: 5s;
+    background-color: white;
+    border-style: solid;
+    border-color: black;
+}
+#contact:hover{
+    animation-duration: 5s;
+    background-color: white;
+    border-style: solid;
+    border-color: black;
+}
+
+
+.end{
+    padding: 5px;
+    color: black;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+
+
+
+
+

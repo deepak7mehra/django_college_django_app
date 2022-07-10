@@ -1,0 +1,96 @@
+{% extends 'base.html' %} 
+{% load static %}
+ {% comment %}
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="{% static 'project/card.css' %}" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <a href="{% url 'project1' %}" target="_blank">
+        <div class="card">
+          <img
+            src="{% static 'project/images/dice-game.jpg' %}"
+            alt="this is an image"
+          />
+          <div class="intro">
+            <h1>Cheetah</h1>
+            <p>
+              The <span>Cheetah</span> Lorem ipsum dolor sit amet consectetur
+              adipisicing elit. Officiis cum deleniti ducimus natus ea, quaerat
+              impedit, nostrum nesciunt, ex provident qui at laboriosam eaque
+              hic aut rem perspiciatis harum. Alias!
+            </p>
+          </div>
+        </div>
+      </a>
+      <a href="{% url 'project2' %}" target="_blank">
+        <div class="card">
+          <img
+            src="{% static 'project/images/guess-game.png' %}"
+            alt="this is an image"
+          />
+          <div class="intro">
+            <h1>Cheetah</h1>
+            <p>
+              The <span>Cheetah</span> Lorem ipsum dolor sit amet consectetur
+              adipisicing elit. Officiis cum deleniti ducimus natus ea, quaerat
+              impedit, nostrum nesciunt, ex provident qui at laboriosam eaque
+              hic aut rem perspiciatis harum. Alias!
+            </p>
+          </div>
+        </div>
+      </a>
+      <!-- <div class="card">
+            <img src="image1.jpg" alt="this is an image">
+            <div class="intro">
+                <h1>Cheetah</h1>
+                <p>The <span>Cheetah</span> Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis cum deleniti ducimus natus ea, quaerat impedit, nostrum nesciunt, ex provident qui at laboriosam eaque hic aut rem perspiciatis harum. Alias!</p>
+            </div>
+        </div> -->
+    </div>
+  </body>
+</html>
+{% endcomment %} 
+{% block css %}
+<link rel="stylesheet" href="{% static 'index.css' %}" />
+<link rel="stylesheet" href="{% static 'project/card.css' %}" />
+
+{% endblock %} 
+{% block title %}projects{% endblock %}
+{% block content %}
+<div class="container">
+  <a href="{% url 'project1' %}" target="_blank">
+    <div class="card">
+      <img class = "img"
+        src="{% static 'project/images/dice-game.jpg' %}"
+        alt="this is an image"
+      />
+      <div class="intro">
+        <h1>DIE GAME</h1>
+        <p>
+          <span>die game</span> click to play the game
+        </p>
+      </div>
+    </div>
+  </a>
+  <a href="{% url 'project2' %}" target="_blank">
+    <div class="card">
+      <img class = "img"
+        src="{% static 'project/images/guess-game.png' %}"
+        alt="this is an image"
+      />
+      <div class="intro">
+        <h1>GUESS THE NUMBER</h1>
+        <p>
+          <span>guess the number</span> click to play the game
+        </p>
+      </div>
+    </div>
+  </a>
+</div>
+{% endblock %}

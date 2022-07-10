@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block css %}
+<link rel="stylesheet" href="{% static 'index.css' %}" />
+<link rel="stylesheet" href="{% static 'project/certificates.css' %}" />
+{% endblock  %}
+
+{% block title %}certificates{% endblock  %}
+
+{% block content %}
+    <div class= "section1">
+        <img class="section1-img img1" src="{% static 'contact/images/certificate1.jpg' %}"/>
+        <img class ="section1-img img2" src="{% static 'contact/images/certificate2.jpg' %}"/>
+    </div>
+    <div class= "section2">
+        <img class="section2-img img3" src="{% static 'contact/images/certificate3.jpg' %}"/>
+        <img class ="section2-img img4" src="{% static 'project/images/dice-2.png' %}"/>
+    </div>
+{% endblock  %}

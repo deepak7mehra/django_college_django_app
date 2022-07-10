@@ -1,0 +1,140 @@
+{% extends 'base.html' %}
+{% load static %}
+
+
+
+ {% comment %}
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="{% static 'contact/contact.css' %}" />
+    <link rel="stylesheet" href="{% static 'index.css' %}" />
+    <title>Contact</title>
+  </head>
+
+  <body>
+    <div class="nav">
+      <div class="nav1" style="padding: 28px">
+        <a href="index.html"><img src="icon.png" alt="this is an image" /></a>
+      </div>
+
+      <div class="nav2">
+        <p>
+          <a href="resume.html">
+            <p>Resume |</p>
+          </a>
+          <a href="#">
+            <p>Project</p>
+          </a>
+          <a href="#">
+            <p></p>
+          </a>
+        </p>
+      </div>
+    </div>
+
+    <div class="form">
+      <div>
+        <h1>Contact</h1>
+        <small>looking forward to hear from you</small>
+        <br />
+        <h3>Phone</h3>
+        <p>8287913301</p>
+        <br />
+        <h3>Email</h3>
+        <p>deepak7mehra7@gmail.com</p>
+      </div>
+
+      <div>
+        <!-- <h1>form</h1> -->
+        <form>
+          <div class="inside1">
+            <label for="fname" style="padding-right: 10px">First name:</label
+            ><br />
+            <input
+              type="text"
+              id="fname"
+              name="fname"
+              style="padding-right: 20px"
+            /><br />
+            <label for="lname" style="padding-right: 10px; padding-left: 10px"
+              >Last name:</label
+            ><br />
+            <input type="text" id="lname" name="lname" /><br /><br />
+          </div>
+          <br />
+          <div class="inside2">
+            <label for="email">Email:</label><br />
+            <input type="email" id="email" name="email" /><br />
+            <label for="phone">phone:</label><br />
+            <input type="number" id="phone" name="phone" /><br /><br />
+          </div>
+
+          <br />
+
+          <div class="btn"><button id="btn">Submit</button></div>
+        </form>
+      </div>
+    </div>
+  </body>
+  {% endcomment %}
+
+ {% comment %}  <script src="contact.js"></script>
+</html> {% endcomment %}
+
+{% block css %}
+<link rel="stylesheet" href="{% static 'contact/contact.css' %}" />
+<link rel="stylesheet" href="{% static 'index.css' %}" />
+{% endblock %} 
+
+{% block title %}contact{% endblock  %}
+
+{% block content %}
+<div class="form">
+  <div>
+    <h1>Contact</h1>
+    <small>looking forward to hear from you</small>
+    <br />
+    <h3>Phone</h3>
+    <p>8287913301</p>
+    <br />
+    <h3>Email</h3>
+    <p>deepak7mehra7@gmail.com</p>
+  </div>
+
+  <div>
+    <!-- <h1>form</h1> -->
+    <form>
+      <div class="inside1">
+        <label for="fname" style="padding-right: 10px">First name:</label><br />
+        <input
+          type="text"
+          id="fname"
+          name="fname"
+          style="padding-right: 20px"
+        /><br />
+        <label for="lname" style="padding-right: 10px; padding-left: 10px"
+          >Last name:</label
+        ><br />
+        <input type="text" id="lname" name="lname" /><br /><br />
+      </div>
+      <br />
+      <div class="inside2">
+        <label for="email">Email:</label><br />
+        <input type="email" id="email" name="email" /><br />
+        <label for="phone">phone:</label><br />
+        <input type="number" id="phone" name="phone" /><br /><br />
+      </div>
+
+      <br />
+
+      <div class="btn"><button id="btn">Submit</button></div>
+    </form>
+  </div>
+</div>
+
+{% endblock %}
